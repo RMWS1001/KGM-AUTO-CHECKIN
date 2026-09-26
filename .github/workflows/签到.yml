@@ -3,6 +3,7 @@ on:
   schedule:
     - cron: "50 4 * * *"
       timezone: "Asia/Shanghai"
+      workflow_dispatch:  # 加上这一行，网页就出现Run workflow手动按钮
 permissions:
   contents: read
   actions: write
